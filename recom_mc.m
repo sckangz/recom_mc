@@ -91,6 +91,8 @@ for t = 1:r
             funval = log(1+rts(2))+rho*(rts(2)-S0(t)).^2;
             if funval>log(1+0)+rho*(0-S0(t)).^2;
                 rt(t) = 0;
+                 else
+                rt(t)=rts(2);
             end
         end
     end
